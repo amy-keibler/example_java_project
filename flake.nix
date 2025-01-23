@@ -38,6 +38,18 @@
           settingsFile = "settings-staging.xml";
           centralUrl = "https://staging.portal.central.sonatype.dev";
         };
+
+        mvnProduction = mkMvn {
+          name = "mvnProduction";
+          settingsFile = "settings-production.xml";
+          centralUrl = "https://central.sonatype.com";
+        };
+
+        mvnProductionVPN = mkMvn {
+          name = "mvnProductionVPN";
+          settingsFile = "settings-production.xml";
+          centralUrl = "https://production.portal.central.sonatype.dev";
+        };
       in
       rec {
         devShells.default = pkgs.mkShell {
@@ -49,6 +61,8 @@
 
             mvnLocal
             mvnStaging
+            mvnProduction
+            mvnProductionVPN
 
             # Nix tooling
             nixpkgs-fmt
