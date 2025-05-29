@@ -6,7 +6,7 @@
 
   <groupId>io.github.amy-keibler.sigstore</groupId>
   <artifactId>example_java_project</artifactId>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>An example library that demonstrates the Central Publish Plugin.</description>

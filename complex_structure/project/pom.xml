@@ -7,13 +7,13 @@
   <parent>
     <groupId>io.github.amy-keibler</groupId>
     <artifactId>example_java_project_parent</artifactId>
-    <version>0.1.7</version>
+    <version>0.1.8</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>io.github.amy-keibler</groupId>
   <artifactId>example_java_project</artifactId>
-  <version>0.1.7</version>
+  <version>0.1.8</version>
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>An example library that demonstrates the Central Publish Plugin.</description>
