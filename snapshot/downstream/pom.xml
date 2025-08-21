@@ -6,7 +6,7 @@
 
   <groupId>io.github.amy-keibler.snapshot</groupId>
   <artifactId>example_java_project_snapshot_dependency</artifactId>
-  <version>0.1.1</version>
+  <version>0.1.2-SNAPSHOT</version>
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>An example library that demonstrates the Central Publish Plugin.</description>
@@ -60,6 +60,14 @@
       <url>${central.url}/repository/maven-snapshots/</url>
     </repository>
   </repositories>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <name>Central Portal Staging</name>
+      <id>central.testing</id>
+      <url>${central.url}/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>

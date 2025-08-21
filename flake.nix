@@ -22,7 +22,7 @@
             settings_file="$git_root/${settingsFile}"
             mvn \
                --settings="$settings_file" \
-              -Dcentral.url='${centralUrl}'\
+               -Dcentral.url='${centralUrl}' \
                "$@";
           '';
         };
